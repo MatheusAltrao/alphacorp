@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
 import Logo from "../logo-components/logo";
 
 const MENU_ITEMS = [
@@ -30,9 +29,6 @@ const NavMenuItems = ({ className }: NavMenuItemsProps) => (
 );
 
 export function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-
   return (
     <header>
       <nav className="bg-background sticky top-0 isolate z-50 border-b py-3.5 md:py-4">
@@ -43,10 +39,10 @@ export function Header() {
             </Link>
 
             <Sheet>
-              <SheetTrigger>
+              <SheetTrigger className="md:hidden">
                 <Menu />
               </SheetTrigger>
-              <SheetContent>
+              <SheetContent className="space-y-8">
                 <SheetHeader>
                   <SheetTitle>Are you absolutely sure?</SheetTitle>
                   <SheetDescription>
@@ -56,9 +52,7 @@ export function Header() {
 
                 <div className="flex w-full flex-col justify-end gap-5 pb-2.5 md:hidden">
                   <NavMenuItems />
-                  <Link href="#pricing">
-                    <Button className="w-full">Try for free</Button>
-                  </Link>
+                  <Button className="w-full">Try for free</Button>
                 </div>
               </SheetContent>
             </Sheet>
@@ -67,9 +61,7 @@ export function Header() {
           {/* Desktop Navigation */}
           <div className="hidden w-full flex-row justify-end gap-5 md:flex">
             <NavMenuItems />
-            <Link href="#pricing">
-              <Button>Try for free</Button>
-            </Link>
+            <Button>Try for free</Button>
           </div>
         </div>
       </nav>
