@@ -1,17 +1,18 @@
-"use client";
+'use client'
 
-import { BarChart3, Bot, Plug, TextSearch } from "lucide-react";
-import { Tagline } from "../ui/tag-line";
+import { BarChart3, Bot, Plug, TextSearch } from 'lucide-react'
+import { Tagline } from '../ui/tag-line'
 
 export function Features() {
   return (
-    <section className="bg-secondary section-padding-y border-b" id="how-it-works">
+    <section className="bg-secondary section-padding-y border-b">
       <div className="container-padding-x container mx-auto flex flex-col gap-10 md:gap-12">
         <div className="section-title-gap-lg mx-auto flex max-w-xl flex-col items-center text-center">
           <Tagline>How it works</Tagline>
           <h2 className="heading-lg text-foreground">Get started in 2 minutes</h2>
           <p className="text-muted-foreground text-base">
-            Explain in one or two concise sentences how your solution transforms users&apos; challenges into positive outcomes.
+            Explain in one or two concise sentences how your solution transforms users&apos; challenges into positive
+            outcomes.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
@@ -54,5 +55,5 @@ export function Features() {
         </div>
       </div>
     </section>
-  );
+  )
 }

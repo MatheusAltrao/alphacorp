@@ -1,31 +1,23 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Check } from "lucide-react";
-import Image from "next/image";
-import Logo from "../../assets/logo/logo-full.png";
-import { Tagline } from "../ui/tag-line";
+import { AspectRatio } from '@/components/ui/aspect-ratio'
+import { Button } from '@/components/ui/button'
+import { ArrowRight, Check } from 'lucide-react'
+import Image from 'next/image'
+import Logo from '../../assets/logo/logo-full.png'
+import { Tagline } from '../ui/tag-line'
 
 export function HeroSection() {
   return (
     <section className="bg-secondary section-padding-y" aria-labelledby="hero-heading">
       <div className="container-padding-x container mx-auto flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
-        {/* Left Column */}
         <div className="flex flex-1 flex-col gap-6 lg:gap-8">
-          {/* Section Title */}
           <div className="section-title-gap-xl flex flex-col">
-            {/* Tagline */}
             <Tagline>MindSpace</Tagline>
-            {/* Main Heading */}
-            <h1 id="hero-heading" className="heading-xl">
-              Never forget what was said in a meeting again
-            </h1>
-            {/* Description */}
+            <h1 className="heading-xl">Never forget what was said in a meeting again</h1>
             <p className="text-muted-foreground text-base lg:text-lg">
               AI that joins, transcribes, and transforms your meetings into structured knowledge
             </p>
           </div>
 
-          {/* Feature List */}
           <div className="flex flex-col gap-2 md:gap-3">
             <div className="flex items-start gap-3">
               <div className="pt-0.5">
@@ -67,5 +59,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

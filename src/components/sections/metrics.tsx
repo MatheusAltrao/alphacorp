@@ -1,7 +1,7 @@
-"use client";
+'use client'
 
-import { Card, CardContent } from "@/components/ui/card";
-import { Tagline } from "../ui/tag-line";
+import { Card, CardContent } from '@/components/ui/card'
+import { Tagline } from '../ui/tag-line'
 
 export function Metrics() {
   return (
@@ -12,7 +12,8 @@ export function Metrics() {
             <Tagline>Metrics</Tagline>
             <h2 className="heading-lg text-foreground">Numbers don’t lie</h2>
             <p className="text-muted-foreground">
-              Add a concise value statement that explains how your metrics demonstrate success and growth. Focus on transformation.
+              Add a concise value statement that explains how your metrics demonstrate success and growth. Focus on
+              transformation.
             </p>
           </div>
 
@@ -51,5 +52,5 @@ export function Metrics() {
         </div>
       </div>
     </section>
-  );
+  )
 }

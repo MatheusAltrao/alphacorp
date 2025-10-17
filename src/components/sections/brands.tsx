@@ -1,8 +1,9 @@
-"use client";
+'use client'
 
-import { Tagline } from "../ui/tag-line";
+import Image from 'next/image'
+import { Tagline } from '../ui/tag-line'
 
-const logo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIkTIJt4WX5aujhywewtUu2PcnhvI9PsV7LA&s";
+const logo = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIkTIJt4WX5aujhywewtUu2PcnhvI9PsV7LA&s'
 
 const logosData = [
   {
@@ -37,7 +38,7 @@ const logosData = [
     id: 8,
     component: logo,
   },
-];
+]
 
 export function Brands() {
   return (
@@ -51,12 +52,16 @@ export function Brands() {
           <div className="relative w-full overflow-hidden mask-[linear-gradient(to_right,transparent_0%,black_12.5%,black_87.5%,transparent_100%)]">
             <div className="animate-infinite-scroll flex w-max items-center">
               {[...logosData, ...logosData].map((logoItem, index) => {
-                const uniqueKey = `logo-wrapper-${logoItem.id}-${index}`;
+                const uniqueKey = `logo-wrapper-${logoItem.id}-${index}`
                 return (
                   <div key={uniqueKey} className="w-48 flex-shrink-0 place-items-center">
-                    <img src={logoItem.component} alt={`Logo ${logoItem.id}`} className="h-12 w-auto object-contain grayscale opacity-60" />
+                    <Image
+                      src={logoItem.component}
+                      alt={`Logo ${logoItem.id}`}
+                      className="h-12 w-auto object-contain grayscale opacity-60"
+                    />
                   </div>
-                );
+                )
               })}
             </div>
           </div>
@@ -78,5 +83,5 @@ export function Brands() {
         }
       `}</style>
     </section>
-  );
+  )
 }

@@ -3,5 +3,5 @@ export default function Logo() {
     <h2 className="font-semibold text-2xl">
       <span className="text-primary">Alpha</span>Corp
     </h2>
-  );
+  )
 }

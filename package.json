@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "biome check ./src",
+    "format": "biome check --write ./src",
+    "check-types": "tsc --pretty --noEmit",
+    "check-all": "npm run lint && npm run check-types && npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -29,6 +32,7 @@
     "zod": "^4.1.12"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.2.6",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

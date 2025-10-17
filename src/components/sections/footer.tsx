@@ -1,11 +1,11 @@
-"use client";
+'use client'
 
-import Link from "next/link";
-import Logo from "../logo-components/logo";
+import Link from 'next/link'
+import Logo from '../logo-components/logo'
 
 export function Footer() {
   return (
-    <footer className="bg-background section-padding-y" role="contentinfo" aria-label="Site footer">
+    <footer className="bg-background section-padding-y">
       <div className="container-padding-x  mx-auto flex flex-col items-center justify-center gap-8">
         <div className="flex w-full flex-col items-center gap-12 text-center">
           <Link href="/" aria-label="Go to homepage">
@@ -15,11 +15,11 @@ export function Footer() {
 
         <div>
           <p className="text-muted-foreground text-center text-sm">
-            Built with{" "}
+            Built with{' '}
             <Link href="https://www.shadcndesign.com/pro-blocks" className="underline" target="_blank">
               Pro Blocks
-            </Link>{" "}
-            by{" "}
+            </Link>{' '}
+            by{' '}
             <Link href="https://www.shadcndesign.com/" className="underline" target="_blank">
               shadcndesign.com
             </Link>
@@ -28,5 +28,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

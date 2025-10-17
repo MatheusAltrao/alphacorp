@@ -1,23 +1,23 @@
-"use client";
+'use client'
 
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import Logo from "../logo-components/logo";
+import { Button } from '@/components/ui/button'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { Menu } from 'lucide-react'
+import Link from 'next/link'
+import Logo from '../logo-components/logo'
 
 const MENU_ITEMS = [
-  { label: "Features", href: "#features" },
-  { label: "How it works", href: "#how-it-works" },
-  { label: "FAQ", href: "#faq" },
-] as const;
+  { label: 'Features', href: '#features' },
+  { label: 'How it works', href: '#how-it-works' },
+  { label: 'FAQ', href: '#faq' },
+] as const
 
 interface NavMenuItemsProps {
-  className?: string;
+  className?: string
 }
 
 const NavMenuItems = ({ className }: NavMenuItemsProps) => (
-  <div className={`flex flex-col gap-1 md:flex-row ${className ?? ""}`}>
+  <div className={`flex flex-col gap-1 md:flex-row ${className ?? ''}`}>
     {MENU_ITEMS.map(({ label, href }) => (
       <Link key={label} href={href}>
         <Button variant="ghost" className="w-full md:w-auto">
@@ -26,7 +26,7 @@ const NavMenuItems = ({ className }: NavMenuItemsProps) => (
       </Link>
     ))}
   </div>
-);
+)
 
 export function Header() {
   return (
@@ -46,7 +46,8 @@ export function Header() {
                 <SheetHeader>
                   <SheetTitle>Are you absolutely sure?</SheetTitle>
                   <SheetDescription>
-                    This action cannot be undone. This will permanently delete your account and remove your data from our servers.
+                    This action cannot be undone. This will permanently delete your account and remove your data from
+                    our servers.
                   </SheetDescription>
                 </SheetHeader>
 
@@ -66,5 +67,5 @@ export function Header() {
         </div>
       </nav>
     </header>
-  );
+  )
 }
