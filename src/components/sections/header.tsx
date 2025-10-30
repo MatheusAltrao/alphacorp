@@ -5,27 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../logo-components/logo";
-
-const MENU_ITEMS = [
-  { label: "How it works", href: "#how-it-works" },
-  { label: "Metrics", href: "#results" },
-] as const;
-
-interface NavMenuItemsProps {
-  className?: string;
-}
-
-const NavMenuItems = ({ className }: NavMenuItemsProps) => (
-  <div className={`flex flex-col gap-1 md:flex-row ${className ?? ""}`}>
-    {MENU_ITEMS.map(({ label, href }) => (
-      <Link key={label} href={href}>
-        <Button variant="ghost" className="w-full md:w-auto">
-          {label}
-        </Button>
-      </Link>
-    ))}
-  </div>
-);
+import MenuLinks from "./menu-links";
 
 export default function Header() {
   return (
@@ -43,8 +23,10 @@ export default function Header() {
               </SheetTrigger>
               <SheetContent className="space-y-8">
                 <div className="flex w-full flex-col justify-end gap-5 pb-2.5 md:hidden">
-                  <NavMenuItems />
-                  <Button className="w-full">Contact</Button>
+                  <MenuLinks />
+                  <Link href="#contact">
+                    <Button>Contact</Button>
+                  </Link>
                 </div>
               </SheetContent>
             </Sheet>
@@ -52,7 +34,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <div className="hidden w-full flex-row justify-end gap-5 md:flex">
-            <NavMenuItems />
+            <MenuLinks />
             <Link href="#contact">
               <Button>Contact</Button>
             </Link>
