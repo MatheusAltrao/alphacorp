@@ -8,7 +8,7 @@ import Logo from "../logo-components/logo";
 
 const MENU_ITEMS = [
   { label: "How it works", href: "#how-it-works" },
-  { label: "Metrics", href: "#metrics" },
+  { label: "Metrics", href: "#results" },
 ] as const;
 
 interface NavMenuItemsProps {
