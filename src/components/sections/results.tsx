@@ -1,5 +1,5 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Tagline } from "../ui/tag-line";
+import { Card, CardContent } from '@/components/ui/card'
+import { Tagline } from '../ui/tag-line'
 
 export default function Results() {
   return (
@@ -10,8 +10,8 @@ export default function Results() {
             <Tagline>Results</Tagline>
             <h2 className="heading-lg text-foreground">Our numbers speak for themselves</h2>
             <p className="text-muted-foreground">
-              Indicators that prove quality, speed, and trust in every service provided. Commitment to on-time delivery and consistent cleaning
-              standards.
+              Indicators that prove quality, speed, and trust in every service provided. Commitment to on-time delivery
+              and consistent cleaning standards.
             </p>
           </div>
 
@@ -21,7 +21,8 @@ export default function Results() {
                 <h3 className="text-primary font-semibold">Consistent quality</h3>
                 <span className="text-foreground text-3xl font-semibold md:text-4xl">10k+</span>
                 <p className="text-muted-foreground text-base">
-                  Spaces sanitized following strict checklists and recurring inspections to maintain a high cleaning standard.
+                  Spaces sanitized following strict checklists and recurring inspections to maintain a high cleaning
+                  standard.
                 </p>
               </CardContent>
             </Card>
@@ -41,7 +42,8 @@ export default function Results() {
                 <h3 className="text-primary font-semibold">Punctuality and trust</h3>
                 <span className="text-foreground text-3xl font-semibold md:text-4xl">4.9/5</span>
                 <p className="text-muted-foreground text-base">
-                  Average customer rating for on-time delivery, clear communication, and consistent results at every visit.
+                  Average customer rating for on-time delivery, clear communication, and consistent results at every
+                  visit.
                 </p>
               </CardContent>
             </Card>
@@ -49,5 +51,5 @@ export default function Results() {
         </div>
       </div>
     </section>
-  );
+  )
 }

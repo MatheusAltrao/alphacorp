@@ -1,25 +1,25 @@
-"use client";
-import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
-import { Menu } from "lucide-react";
-import Link from "next/link";
-import { useState } from "react";
-import MenuLinks from "./menu-links";
+'use client'
+import { Button } from '@/components/ui/button'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
+import { Menu } from 'lucide-react'
+import Link from 'next/link'
+import { useState } from 'react'
+import MenuLinks from './menu-links'
 
 export default function MenuMobile() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
-    setOpen(false);
+    e.preventDefault()
+    setOpen(false)
 
     setTimeout(() => {
-      const element = document.querySelector(href);
+      const element = document.querySelector(href)
       if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+        element.scrollIntoView({ behavior: 'smooth' })
       }
-    }, 300);
-  };
+    }, 300)
+  }
   return (
     <Sheet open={open} onOpenChange={setOpen}>
       <SheetTrigger className="md:hidden">
@@ -32,11 +32,11 @@ export default function MenuMobile() {
         </SheetHeader>
         <div className="flex w-full flex-col justify-end gap-5 pb-2.5 md:hidden">
           <MenuLinks onLinkClick={handleLinkClick} />
-          <Link onClick={(e) => handleLinkClick(e, "#contact")} className="w-full" href="#contact">
+          <Link onClick={(e) => handleLinkClick(e, '#contact')} className="w-full" href="#contact">
             <Button className="w-full">Contact</Button>
           </Link>
         </div>
       </SheetContent>
     </Sheet>
-  );
+  )
 }

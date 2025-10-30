@@ -1,9 +1,9 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Button } from "@/components/ui/button";
-import { ArrowRight, Check } from "lucide-react";
-import Image from "next/image";
-import Logo from "../../assets/logo/logo-full.png";
-import { Tagline } from "../ui/tag-line";
+import { AspectRatio } from '@/components/ui/aspect-ratio'
+import { Button } from '@/components/ui/button'
+import { ArrowRight, Check } from 'lucide-react'
+import Image from 'next/image'
+import Logo from '../../assets/logo/logo-full.png'
+import { Tagline } from '../ui/tag-line'
 
 export default function HeroSection() {
   return (
@@ -37,7 +37,9 @@ export default function HeroSection() {
               <div className="pt-0.5">
                 <Check className="text-primary h-5 w-5" />
               </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">Consistent and reliable service</span>
+              <span className="text-card-foreground text-base leading-6 font-medium">
+                Consistent and reliable service
+              </span>
             </div>
           </div>
 
@@ -59,5 +61,5 @@ export default function HeroSection() {
         </div>
       </div>
     </section>
-  );
+  )
 }

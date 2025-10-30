@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Logo from "../logo-components/logo";
+import Link from 'next/link'
+import Logo from '../logo-components/logo'
 
 export default function Footer() {
   return (
@@ -13,11 +13,11 @@ export default function Footer() {
 
         <div>
           <p className="text-muted-foreground text-center text-sm">
-            Developed by{" "}
+            Developed by{' '}
             <Link href="https://www.linkedin.com/in/matheus-altrao/" className="underline" target="_blank">
               Matheus Altrão
-            </Link>{" "}
-            and{" "}
+            </Link>{' '}
+            and{' '}
             <Link href="https://www.linkedin.com/in/rafael-myauti/" className="underline" target="_blank">
               Rafael Myauti
             </Link>
@@ -26,5 +26,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  );
+  )
 }

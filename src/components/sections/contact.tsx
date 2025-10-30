@@ -1,5 +1,5 @@
-import ContactForm from "../ui/contact-form";
-import { Tagline } from "../ui/tag-line";
+import ContactForm from '../ui/contact-form'
+import { Tagline } from '../ui/tag-line'
 
 export default function Contact() {
   return (
@@ -18,5 +18,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }

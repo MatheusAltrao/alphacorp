@@ -39,7 +39,8 @@
         "useExportType": "off"
       },
       "correctness": {
-        "noUndeclaredVariables": "off"
+        "noUndeclaredVariables": "off",
+        "useUniqueElementIds": "off"
       }
     },
     "includes": [

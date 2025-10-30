@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import Logo from "../logo-components/logo";
-import MenuLinks from "./menu-links";
-import MenuMobile from "./menu-mobile";
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
+import Logo from '../logo-components/logo'
+import MenuLinks from './menu-links'
+import MenuMobile from './menu-mobile'
 
 export default function Header() {
   return (
@@ -26,5 +26,5 @@ export default function Header() {
         </div>
       </nav>
     </header>
-  );
+  )
 }
