@@ -19,7 +19,7 @@ export default function Footer() {
             </Link>{" "}
             and{" "}
             <Link href="https://www.linkedin.com/in/rafael-myauti/" className="underline" target="_blank">
-              Rafael Miauty
+              Rafael Myauti
             </Link>
             . All rights reserved.
           </p>
