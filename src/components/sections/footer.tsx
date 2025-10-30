@@ -1,9 +1,7 @@
-'use client'
+import Link from "next/link";
+import Logo from "../logo-components/logo";
 
-import Link from 'next/link'
-import Logo from '../logo-components/logo'
-
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-background section-padding-y">
       <div className="container-padding-x  mx-auto flex flex-col items-center justify-center gap-8">
@@ -15,18 +13,18 @@ export function Footer() {
 
         <div>
           <p className="text-muted-foreground text-center text-sm">
-            Built with{' '}
-            <Link href="https://www.shadcndesign.com/pro-blocks" className="underline" target="_blank">
-              Pro Blocks
-            </Link>{' '}
-            by{' '}
+            Developed by{" "}
             <Link href="https://www.shadcndesign.com/" className="underline" target="_blank">
-              shadcndesign.com
+              Matheus Altrão
+            </Link>{" "}
+            and{" "}
+            <Link href="https://www.shadcndesign.com/" className="underline" target="_blank">
+              Rafael Miauty
             </Link>
             . All rights reserved.
           </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

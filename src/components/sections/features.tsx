@@ -1,18 +1,15 @@
-'use client'
+import { BarChart3, Bot, Plug, TextSearch } from "lucide-react";
+import { Tagline } from "../ui/tag-line";
 
-import { BarChart3, Bot, Plug, TextSearch } from 'lucide-react'
-import { Tagline } from '../ui/tag-line'
-
-export function Features() {
+export default function Features() {
   return (
-    <section className="bg-secondary section-padding-y border-b">
+    <section id="como-funciona" className="bg-secondary section-padding-y border-b">
       <div className="container-padding-x container mx-auto flex flex-col gap-10 md:gap-12">
         <div className="section-title-gap-lg mx-auto flex max-w-xl flex-col items-center text-center">
-          <Tagline>How it works</Tagline>
-          <h2 className="heading-lg text-foreground">Get started in 2 minutes</h2>
+          <Tagline>Como funciona</Tagline>
+          <h2 className="heading-lg text-foreground">Processo simples em 4 etapas</h2>
           <p className="text-muted-foreground text-base">
-            Explain in one or two concise sentences how your solution transforms users&apos; challenges into positive
-            outcomes.
+            Transformamos seu ambiente em um espaço limpo e organizado através de um processo profissional e eficiente.
           </p>
         </div>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-6 lg:grid-cols-4">
@@ -21,8 +18,8 @@ export function Features() {
               <Plug className="text-primary h-5 w-5" />
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-foreground font-semibold">1. Connect</h3>
-              <p className="text-muted-foreground">Integrate with Zoom, Teams, Google Meet, or Slack</p>
+              <h3 className="text-foreground font-semibold">1. Contato</h3>
+              <p className="text-muted-foreground">Entre em contato e solicite seu orçamento personalizado</p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-5 text-center">
@@ -30,8 +27,8 @@ export function Features() {
               <Bot className="text-primary h-5 w-5" />
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-foreground font-semibold">2. Capture</h3>
-              <p className="text-muted-foreground">AI joins and transcribes in real-time as you speak with teammates</p>
+              <h3 className="text-foreground font-semibold">2. Avaliação</h3>
+              <p className="text-muted-foreground">Nossa equipe avalia o ambiente e define o melhor plano de limpeza</p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-5 text-center">
@@ -39,8 +36,8 @@ export function Features() {
               <BarChart3 className="text-primary h-5 w-5" />
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-foreground font-semibold">3. Transform</h3>
-              <p className="text-muted-foreground">Get instant meeting summaries, actions, and insights</p>
+              <h3 className="text-foreground font-semibold">3. Execução</h3>
+              <p className="text-muted-foreground">Realizamos a limpeza com qualidade superior e no prazo acordado</p>
             </div>
           </div>
           <div className="flex flex-col items-center gap-5 text-center">
@@ -48,12 +45,12 @@ export function Features() {
               <TextSearch className="text-primary h-5 w-5" />
             </div>
             <div className="flex flex-col gap-2">
-              <h3 className="text-foreground font-semibold">4. Discover</h3>
-              <p className="text-muted-foreground">Search and connect knowledge across all meetings</p>
+              <h3 className="text-foreground font-semibold">4. Garantia</h3>
+              <p className="text-muted-foreground">Garantimos a satisfação e oferecemos suporte pós-serviço</p>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
