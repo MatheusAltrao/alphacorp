@@ -7,7 +7,7 @@ import { Tagline } from "../ui/tag-line";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="bg-secondary section-padding-y" aria-labelledby="hero-heading">
+    <section id="home" className=" section-padding-y" aria-labelledby="hero-heading">
       <div className="container-padding-x container mx-auto flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
         <div className="flex flex-1 flex-col gap-6 lg:gap-8">
           <div className="section-title-gap-xl flex flex-col">

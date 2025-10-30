@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 import Logo from "../logo-components/logo";
@@ -43,16 +43,9 @@ export default function Header() {
                 <Menu />
               </SheetTrigger>
               <SheetContent className="space-y-8">
-                <SheetHeader>
-                  <SheetTitle>Are you absolutely sure?</SheetTitle>
-                  <SheetDescription>
-                    This action cannot be undone. This will permanently delete your account and remove your data from our servers.
-                  </SheetDescription>
-                </SheetHeader>
-
                 <div className="flex w-full flex-col justify-end gap-5 pb-2.5 md:hidden">
                   <NavMenuItems />
-                  <Button className="w-full">Try for free</Button>
+                  <Button className="w-full">Contact</Button>
                 </div>
               </SheetContent>
             </Sheet>
@@ -61,7 +54,7 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden w-full flex-row justify-end gap-5 md:flex">
             <NavMenuItems />
-            <Button>Try for free</Button>
+            <Button>Contact</Button>
           </div>
         </div>
       </nav>
