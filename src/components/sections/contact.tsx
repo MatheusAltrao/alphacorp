@@ -1,3 +1,4 @@
+import ContactForm from "../ui/contact-form";
 import { Tagline } from "../ui/tag-line";
 
 export default function Contact() {
@@ -10,6 +11,10 @@ export default function Contact() {
           <p className="text-muted-foreground text-base">
             Reach out to us via phone or email to discuss your cleaning needs and receive a customized quote.
           </p>
+        </div>
+
+        <div className="flex items-center justify-center w-full max-w-[500px] mx-auto">
+          <ContactForm />
         </div>
       </div>
     </section>
