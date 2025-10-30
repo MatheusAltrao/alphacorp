@@ -7,9 +7,8 @@ import Link from "next/link";
 import Logo from "../logo-components/logo";
 
 const MENU_ITEMS = [
-  { label: "Features", href: "#features" },
   { label: "How it works", href: "#how-it-works" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Metrics", href: "#metrics" },
 ] as const;
 
 interface NavMenuItemsProps {
@@ -54,7 +53,9 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden w-full flex-row justify-end gap-5 md:flex">
             <NavMenuItems />
-            <Button>Contact</Button>
+            <Link href="#contact">
+              <Button>Contact</Button>
+            </Link>
           </div>
         </div>
       </nav>

@@ -3,7 +3,7 @@ import Logo from "../logo-components/logo";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary section-padding-y">
+    <footer id="footer" className="bg-secondary section-padding-y">
       <div className="container-padding-x  mx-auto flex flex-col items-center justify-center gap-8">
         <div className="flex w-full flex-col items-center gap-12 text-center">
           <Link href="/" aria-label="Go to homepage">

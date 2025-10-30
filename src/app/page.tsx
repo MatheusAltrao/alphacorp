@@ -1,7 +1,7 @@
-import Features from "@/components/sections/features";
 import Footer from "@/components/sections/footer";
 import Header from "@/components/sections/header";
 import HeroSection from "@/components/sections/hero-section";
+import HowItWorks from "@/components/sections/howitworks";
 import Metrics from "@/components/sections/metrics";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <main>
       <Header />
       <HeroSection />
-      <Features />
+      <HowItWorks />
       <Metrics />
       <Footer />
     </main>

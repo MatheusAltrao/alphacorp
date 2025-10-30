@@ -7,14 +7,14 @@ import { Tagline } from "../ui/tag-line";
 
 export default function HeroSection() {
   return (
-    <section id="home" className=" section-padding-y" aria-labelledby="hero-heading">
+    <section id="home" className="section-padding-y" aria-labelledby="hero-heading">
       <div className="container-padding-x container mx-auto flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
         <div className="flex flex-1 flex-col gap-6 lg:gap-8">
           <div className="section-title-gap-xl flex flex-col">
             <Tagline>AlphaCorp</Tagline>
-            <h1 className="heading-xl">Limpeza profissional com qualidade garantida</h1>
+            <h1 className="heading-xl">Professional cleaning with guaranteed quality</h1>
             <p className="text-muted-foreground text-base lg:text-lg">
-              Transformamos ambientes com rapidez, consistência e confiança em cada serviço prestado
+              We transform environments with speed, consistency, and trust in every service provided.
             </p>
           </div>
 
@@ -23,29 +23,29 @@ export default function HeroSection() {
               <div className="pt-0.5">
                 <Check className="text-primary h-5 w-5" />
               </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">Entrega sempre no prazo</span>
+              <span className="text-card-foreground text-base leading-6 font-medium">Always delivered on time</span>
             </div>
 
             <div className="flex items-start gap-3">
               <div className="pt-0.5">
                 <Check className="text-primary h-5 w-5" />
               </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">Qualidade superior garantida</span>
+              <span className="text-card-foreground text-base leading-6 font-medium">Superior quality guaranteed</span>
             </div>
 
             <div className="flex items-start gap-3">
               <div className="pt-0.5">
                 <Check className="text-primary h-5 w-5" />
               </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">Serviço consistente e confiável</span>
+              <span className="text-card-foreground text-base leading-6 font-medium">Consistent and reliable service</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button>Solicitar orçamento</Button>
+            <Button>Request a quote</Button>
             <Button variant="ghost">
-              Como funciona
+              How it works
               <ArrowRight />
             </Button>
           </div>
