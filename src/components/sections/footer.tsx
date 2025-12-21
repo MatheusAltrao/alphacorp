@@ -1,3 +1,4 @@
+import { PHONE_NUMBER } from "@/const/links";
 import Link from "next/link";
 import Logo from "../logo-components/logo";
 
@@ -25,6 +26,10 @@ export default function Footer() {
             . All rights reserved.
           </p>
         </div>
+
+        <p className="text-muted-foreground text-center text-sm">
+          Contact us <strong className="text-primary">{PHONE_NUMBER}</strong>
+        </p>
       </div>
     </footer>
   );

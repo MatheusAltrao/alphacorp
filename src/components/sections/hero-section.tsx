@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { PHONE_NUMBER } from "@/const/links";
 import { ArrowRight, Check } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,7 +21,8 @@ export default function HeroSection() {
             <Tagline>AlphaCorp</Tagline>
             <h1 className="heading-xl">Professional cleaning with guaranteed quality</h1>
             <p className="text-muted-foreground text-base lg:text-lg">
-              We transform environments with speed, consistency, and trust in every service provided.
+              We transform environments with speed, consistency, and trust in every service provided. Call us at{" "}
+              <strong className="text-primary">{PHONE_NUMBER}</strong> for a free quote.
             </p>
           </div>
 
