@@ -1,9 +1,9 @@
-import { BarChart3, Bot, Plug, TextSearch } from 'lucide-react'
-import { Tagline } from '../ui/tag-line'
+import { BarChart3, Bot, Plug, TextSearch } from "lucide-react";
+import { Tagline } from "../ui/tag-line";
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-secondary section-padding-y border-b">
+    <section id="how-it-works" className=" section-padding-y border-y">
       <div className="container-padding-x container mx-auto flex flex-col gap-10 md:gap-12">
         <div className="section-title-gap-lg mx-auto flex max-w-xl flex-col items-center text-center">
           <Tagline>How it works</Tagline>
@@ -30,9 +30,7 @@ export default function HowItWorks() {
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-foreground font-semibold">2. Evaluation</h3>
-              <p className="text-muted-foreground">
-                Our team evaluates the environment and defines the best cleaning plan.
-              </p>
+              <p className="text-muted-foreground">Our team evaluates the environment and defines the best cleaning plan.</p>
             </div>
           </div>
 
@@ -42,9 +40,7 @@ export default function HowItWorks() {
             </div>
             <div className="flex flex-col gap-2">
               <h3 className="text-foreground font-semibold">3. Execution</h3>
-              <p className="text-muted-foreground">
-                We perform the cleaning with superior quality and within the agreed deadline.
-              </p>
+              <p className="text-muted-foreground">We perform the cleaning with superior quality and within the agreed deadline.</p>
             </div>
           </div>
 
@@ -60,5 +56,5 @@ export default function HowItWorks() {
         </div>
       </div>
     </section>
-  )
+  );
 }
