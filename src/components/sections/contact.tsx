@@ -1,6 +1,6 @@
-import { PHONE_NUMBER } from "@/const/links";
-import ContactForm from "../ui/contact-form";
-import { Tagline } from "../ui/tag-line";
+import { PHONE_NUMBER } from '@/const/links'
+import ContactForm from '../ui/contact-form'
+import { Tagline } from '../ui/tag-line'
 
 export default function Contact() {
   return (
@@ -10,8 +10,8 @@ export default function Contact() {
           <Tagline>Contact Us</Tagline>
           <h2 className="heading-lg text-foreground">Get in touch for a personalized quote</h2>
           <p className="text-muted-foreground text-base">
-            Reach out to us via phone <strong className="text-primary">{PHONE_NUMBER}</strong> or email to discuss your cleaning needs and receive a
-            customized quote.
+            Reach out to us via phone <strong className="text-primary">{PHONE_NUMBER}</strong> or email to discuss your
+            cleaning needs and receive a customized quote.
           </p>
         </div>
 
@@ -20,5 +20,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }
