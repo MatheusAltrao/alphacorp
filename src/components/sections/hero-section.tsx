@@ -1,13 +1,12 @@
-import { AspectRatio } from '@/components/ui/aspect-ratio'
-import { Button } from '@/components/ui/button'
-import { ArrowRight, Check } from 'lucide-react'
-import Image from 'next/image'
-import Logo from '../../assets/logo/logo-full.png'
-import { Tagline } from '../ui/tag-line'
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Check } from "lucide-react";
+import Image from "next/image";
+import Logo from "../../assets/logo/vetical-logo.svg";
+import { Tagline } from "../ui/tag-line";
 
 export default function HeroSection() {
   return (
-    <section id="home" className="section-padding-y" aria-labelledby="hero-heading">
+    <section id="home" className="pt-[20vh] min-h-[90vh] " aria-labelledby="hero-heading">
       <div className="container-padding-x container mx-auto flex flex-col-reverse items-center gap-12 lg:flex-row lg:gap-16">
         <div className="flex flex-1 flex-col gap-6 lg:gap-8">
           <div className="section-title-gap-xl flex flex-col">
@@ -37,9 +36,7 @@ export default function HeroSection() {
               <div className="pt-0.5">
                 <Check className="text-primary h-5 w-5" />
               </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">
-                Consistent and reliable service
-              </span>
+              <span className="text-card-foreground text-base leading-6 font-medium">Consistent and reliable service</span>
             </div>
           </div>
 
@@ -54,12 +51,12 @@ export default function HeroSection() {
         </div>
 
         {/* Right Column */}
-        <div className="w-full flex-1">
-          <AspectRatio ratio={1 / 1}>
-            <Image src={Logo} alt="Hero visual" fill priority className="h-full w-full rounded-xl object-cover" />
-          </AspectRatio>
+        <div className="w-full flex-1 flex items-center justify-center ">
+          <div className="h-[300px] w-[300px] ">
+            <Image src={Logo} alt="Hero visual" className="h-full w-full object-contain" />
+          </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
