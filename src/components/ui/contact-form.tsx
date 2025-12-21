@@ -38,11 +38,6 @@ export default function ContactForm() {
   async function onSubmit(values: z.infer<typeof formSchema>) {
     startTransition(async () => {
       const url = process.env.NEXT_PUBLIC_SEND_EMAIL_API as string;
-
-      if (!url) {
-        console.log("SEND_EMAIL_API is not defined");
-      }
-
       try {
         const response = await fetch(url, {
           method: "POST",
