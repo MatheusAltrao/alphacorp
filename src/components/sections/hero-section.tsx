@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../assets/logo/vetical-logo.svg";
 import { Tagline } from "../ui/tag-line";
 
@@ -8,6 +9,12 @@ export default function HeroSection() {
   return (
     <section id="home" className="pt-[20vh] min-h-[90vh] " aria-labelledby="hero-heading">
       <div className="container-padding-x container mx-auto flex flex-col-reverse items-center gap-12 lg:flex-row lg:gap-16">
+        <div className="w-full flex-1 flex items-center justify-center ">
+          <div className="h-[300px] w-[300px] ">
+            <Image src={Logo} alt="Hero visual" className="h-full w-full object-contain" />
+          </div>
+        </div>
+
         <div className="flex flex-1 flex-col gap-6 lg:gap-8">
           <div className="section-title-gap-xl flex flex-col">
             <Tagline>AlphaCorp</Tagline>
@@ -42,18 +49,15 @@ export default function HeroSection() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button>Request a quote</Button>
-            <Button variant="ghost">
-              How it works
-              <ArrowRight />
-            </Button>
-          </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="w-full flex-1 flex items-center justify-center ">
-          <div className="h-[300px] w-[300px] ">
-            <Image src={Logo} alt="Hero visual" className="h-full w-full object-contain" />
+            <Link href="#contact">
+              <Button>Contact us</Button>
+            </Link>
+            <Link href="#how-it-works">
+              <Button variant="ghost">
+                How it works
+                <ArrowRight />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
