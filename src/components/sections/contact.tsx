@@ -3,7 +3,7 @@ import { Tagline } from "../ui/tag-line";
 
 export default function Contact() {
   return (
-    <section id="contact" className=" section-padding-y border-b">
+    <section id="contact" className="section-padding-y border-b">
       <div className="container-padding-x container mx-auto flex flex-col gap-10 md:gap-12">
         <div className="section-title-gap-lg mx-auto flex max-w-xl flex-col items-center text-center">
           <Tagline>Contact Us</Tagline>
