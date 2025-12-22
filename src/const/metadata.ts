@@ -26,11 +26,7 @@ export const METADADATA_TAGS: Metadata = {
 
   description: "Alpha Janitorial Services Corporation Professional cleaning with guaranteed quality",
   icons: {
-    icon: [
-      {
-        url: "../app/favicon.ico",
-      },
-    ],
+    icon: "/favicon.ico",
   },
   authors: [
     {
