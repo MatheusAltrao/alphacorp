@@ -49,6 +49,8 @@ export const METADADATA_TAGS: Metadata = {
     images: [
       {
         url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: "Alpha Janitorial Services - Professional janitorial and cleaning services with guaranteed quality.",
       },
     ],
