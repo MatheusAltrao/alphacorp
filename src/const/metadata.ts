@@ -48,8 +48,8 @@ export const METADADATA_TAGS: Metadata = {
     siteName: "Alpha Janitorial Services",
     images: [
       {
-        url: "",
-        alt: "",
+        url: "/og-image.jpg",
+        alt: "Alpha Janitorial Services - Professional janitorial and cleaning services with guaranteed quality.",
       },
     ],
   },
