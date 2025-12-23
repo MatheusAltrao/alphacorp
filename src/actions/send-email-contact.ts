@@ -28,7 +28,7 @@ export async function sendEmailContact(formData: FormSendEmailContactData) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const { data, error } = await resend.emails.send({
       from: "info@alphajanitorialcorp.com",
-      to: "myauti.rafael@gmail.com",
+      to: "info@alphajanitorialcorp.com",
       subject: formData.subject,
       react: EmailTemplate({
         name: formData.name,
