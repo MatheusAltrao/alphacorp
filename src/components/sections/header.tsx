@@ -1,8 +1,8 @@
-import { Button } from '@/components/ui/button'
-import Link from 'next/link'
-import Logo from '../logo-components/logo'
-import MenuLinks from './menu-links'
-import MenuMobile from './menu-mobile'
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
+import Logo from "../logo-components/logo";
+import MenuLinks from "./menu-links";
+import MenuMobile from "./menu-mobile";
 
 export default function Header() {
   return (
@@ -20,11 +20,11 @@ export default function Header() {
           <div className="hidden w-full flex-row justify-end gap-5 md:flex">
             <MenuLinks />
             <Link href="#contact">
-              <Button>Contact</Button>
+              <Button name="contact">Contact</Button>
             </Link>
           </div>
         </div>
       </nav>
     </header>
-  )
+  );
 }

@@ -83,7 +83,7 @@ export default function ContactForm() {
             )}
           />
         </div>
-        <Button disabled={isPending} className="w-full" type="submit">
+        <Button name="submit" disabled={isPending} className="w-full" type="submit">
           Submit
           {isPending && (
             <div>
