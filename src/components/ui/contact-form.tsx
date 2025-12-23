@@ -4,6 +4,7 @@ import { sendEmailContact } from "@/actions/send-email-contact";
 import { Button } from "@/components/ui/button";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { sendFormSchema } from "@/schema/send-form.schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader } from "lucide-react";
 import { useTransition } from "react";
@@ -12,32 +13,20 @@ import toast from "react-hot-toast";
 import { z } from "zod";
 import { Textarea } from "./textarea";
 
-const formSchema = z.object({
-  name: z
-    .string()
-    .min(2, "Name must be at least 2 characters")
-    .max(50)
-    .refine((value) => value.trim().split(" ").length >= 2, "Full name must include first and last name"),
-  email: z.string().email("Invalid email address"),
-  text: z.string().min(10, "Text must be at least 10 characters").max(500),
-  subject: z.string().min(1, "Subject is required").max(100),
-});
-
 export default function ContactForm() {
   const [isPending, startTransition] = useTransition();
 
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof sendFormSchema>>({
+    resolver: zodResolver(sendFormSchema),
     defaultValues: {
       name: "",
       email: "",
-      subject: "🎉 New contact from website 🥳",
+      subject: "New contact from website",
       text: "",
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log("Submitting form with values:", values);
+  async function onSubmit(values: z.infer<typeof sendFormSchema>) {
     startTransition(async () => {
       try {
         await sendEmailContact(values);
