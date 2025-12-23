@@ -42,7 +42,7 @@ export const METADADATA_TAGS: Metadata = {
     card: "summary_large_image",
     title: "Alpha Janitorial Services",
     description: "Professional janitorial and cleaning services with guaranteed quality.",
-    images: ["../../public/icon.jpeg"],
+    images: ["/og-image.jpg"],
   },
   openGraph: {
     type: "website",
@@ -53,7 +53,7 @@ export const METADADATA_TAGS: Metadata = {
     siteName: "Alpha Janitorial Services",
     images: [
       {
-        url: "../../public/icon.jpeg",
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Alpha Janitorial Services - Professional janitorial and cleaning services with guaranteed quality.",
