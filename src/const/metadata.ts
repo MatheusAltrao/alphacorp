@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL as string;
+
 export const keywordsMetadata = [
   "cleaning services",
   "janitorial services",
@@ -28,7 +29,7 @@ export const METADADATA_TAGS: Metadata = {
   icons: {
     icon: [
       {
-        url: "/icon.jpeg",
+        url: "../app/icon.jpeg",
       },
     ],
   },
@@ -42,7 +43,7 @@ export const METADADATA_TAGS: Metadata = {
     card: "summary_large_image",
     title: "Alpha Janitorial Services",
     description: "Professional janitorial and cleaning services with guaranteed quality.",
-    images: ["/og-image.jpg"],
+    images: ["../app/icon.jpeg"],
   },
   openGraph: {
     type: "website",
@@ -53,7 +54,7 @@ export const METADADATA_TAGS: Metadata = {
     siteName: "Alpha Janitorial Services",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "../app/icon.jpeg",
         width: 1200,
         height: 630,
         alt: "Alpha Janitorial Services - Professional janitorial and cleaning services with guaranteed quality.",
