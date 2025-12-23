@@ -20,7 +20,7 @@ export default function Header() {
           <div className="hidden w-full flex-row justify-end gap-5 md:flex">
             <MenuLinks />
             <Link href="#contact">
-              <Button name="contact">Contact</Button>
+              <Button aria-label="Contact us">Contact</Button>
             </Link>
           </div>
         </div>

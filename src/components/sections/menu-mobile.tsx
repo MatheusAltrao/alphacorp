@@ -22,7 +22,7 @@ export default function MenuMobile() {
   };
   return (
     <Sheet open={open} onOpenChange={setOpen}>
-      <SheetTrigger name="menu" className="md:hidden">
+      <SheetTrigger aria-label="Open navigation menu" className="md:hidden">
         <Menu />
       </SheetTrigger>
       <SheetContent className="space-y-8">
@@ -33,7 +33,7 @@ export default function MenuMobile() {
         <div className="flex w-full flex-col justify-end gap-5 pb-2.5 md:hidden">
           <MenuLinks onLinkClick={handleLinkClick} />
           <Link onClick={(e) => handleLinkClick(e, "#contact")} className="w-full" href="#contact">
-            <Button name="contact" className="w-full">
+            <Button aria-label="Contact" className="w-full">
               Contact
             </Button>
           </Link>

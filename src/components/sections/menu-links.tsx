@@ -19,7 +19,7 @@ export default function MenuLinks({ className, onLinkClick }: MenuLinksProps) {
     <div className={`flex flex-col gap-1 md:flex-row ${className ?? ""}`}>
       {MENU_ITEMS.map(({ label, href }) => (
         <Link onClick={(e) => handleClick(e, href)} key={label} href={href}>
-          <Button name={label.toLowerCase()} variant="ghost" className="w-full md:w-auto">
+          <Button aria-label={label.toLowerCase()} variant="ghost" className="w-full md:w-auto">
             {label}
           </Button>
         </Link>

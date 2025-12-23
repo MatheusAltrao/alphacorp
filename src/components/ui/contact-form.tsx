@@ -83,7 +83,7 @@ export default function ContactForm() {
             )}
           />
         </div>
-        <Button name="submit" disabled={isPending} className="w-full" type="submit">
+        <Button aria-label="Submit" disabled={isPending} className="w-full" type="submit">
           Submit
           {isPending && (
             <div>
